@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hollys</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script>
+        $(document).ready(function(){
+          $(".slider").bxSlider();
+        });
+      </script>
+  
+    
+    <style>
+        *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+       a{
+        color:#000000;
+        text-decoration: none;
+       }  
+       body{
+        width: 360px;
+        margin:0 auto;    
+    }
+    
+    header{
+        padding: 21px 20px 20px 20px;
+        background-color: #b5121b;
+        position: relative;
+
+      
+    }
+    header>div{
+        display: inline-block;
+    }
+    .alt1{
+        display: block;
+        border-radius:10.5px;
+        width: 63px;
+        height: 21px;
+        background-color: #8c6239;
+        font-family: 'Noto Sans KR';
+        font-weight: 300;
+        font-size: 10px;
+        color: #ffffff;
+        text-align: center;
+        line-height: 21px;
+    }
+    .line{
+        width: 23px;
+        height: 4px;
+        margin-bottom: 4px;
+        background-color: #ffffff;
+    }
+    .line-under{
+        margin-bottom: 0;
+    }
+    .fir{
+        margin-right: 55px;
+    }
+    .scn{
+        margin-right: 76px;
+    }
+    .bx-wrapper{
+        border: none;
+    }
+    .bx-controls-direction{
+        display: none;
+    }
+    .bx-wrapper .bx-pager{
+        bottom: 12px;     
+    }
+    .bx-wrapper .bx-pager.bx-default-pager a{
+            background-color:#999;
+        }
+    .bx-wrapper .bx-pager.bx-default-pager a.active{
+            background-color:#b5121b;
+        }
+    nav{
+        position: absolute;
+        left:0;
+        right: 0;
+        top:100%;
+        z-index: 777777;
+        background-color: #000000;
+        color: #ffffff;
+        display: none;
+    }
+    .main-nav{
+        padding-left: 36px;
+    }
+    .main-nav>li>ul{
+        padding-left: 150px;
+        display: none;
+    }
+    </style>
+</head>
+<body>
+    <div> 
+        <header>
+            <div class="fir">
+                <a href="#" target="_blank" class="alt1">가맹문의</a>
+            </div>
+            <div class="scn">
+                <a href="/index.html"><img src="images/LOGO.png" alt=""></a>
+            </div>
+            <div onclick="$('nav').slideToggle(100);">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line line-under"></div>
+            </div>
+            <nav>
+                <ul class="main-nav">
+                    <li>
+                        MY HOLLYS
+                        <ul class="showsub">
+                            <li onclick="">1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                            <li>5</li>
+                    </ul>
+                    <li>
+                        MENU
+                        <ul>
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                            <li>5</li>
+                            <li>6</li>
+                            <li>7</li>
+                        </ul>
+                    </li>
+                    <li>
+                        HOLLYS MALL
+                        <ul>
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                        </ul>
+                    </li>
+                    <li>
+                        MEMBERSHIP
+                        <ul>
+                            <li>1</li>
+                            <li>2</li>
+                        </ul>
+                    </li>
+                    <li>
+                        HOLLYS NEWS
+                        <ul>
+                            <li>1</li>
+                            <li>2</li>
+                        </ul>
+                    </li>
+                    <li>
+                        STORE
+                        <ul>
+                            <li>1</li>
+                            <li>2</li>
+                        </ul>
+                    </li>
+                    <li>
+                        HOLLYS IS
+                        <ul>
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section class="slider">
+            <div><img src="images/SLID1.png" alt="슬라이더"></div>
+            <div><img src="images/SLID2.png" alt="슬라이더"></div>
+            <div><img src="images/SLID3_06.png" alt="슬라이더"></div>
+        
+        </section>
+    </div>
+    <script>
+        function showsub(self){
+                $(self).children(ul)
+
+        }
+           
+            
+        
+
+        
+    </script>
+</body>
+</html>
